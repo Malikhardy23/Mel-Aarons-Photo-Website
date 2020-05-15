@@ -1,0 +1,2545 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    scroll-behavior: smooth;
+}
+
+hr{
+  color: #F2C450;
+  width: 1350px;
+}
+
+#container{
+  width: 1350px;
+}
+
+.logo-container{
+    display: flex;
+    font-size: 25px;
+    margin-left: 5%;
+    margin-top: 39px;
+    color: #F2C450;
+    cursor: pointer;
+}
+
+.logo-container span ion-icon{
+    position: relative;
+    top: 7px;
+    cursor: pointer;
+}
+
+#main-menu{
+    background-color: #000;
+    height: 10vh;
+    text-align: center;
+    display: flex;
+    
+}
+
+.mobile-menu{
+  display: none;
+}
+
+
+#main-menu a{
+    color: #F2C450;
+    padding: 15px 10px;
+    text-decoration: none;
+    font-size: 25px;
+    cursor: pointer;
+    margin: 0 auto;
+    margin-top: 2%;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: all .5s ease-in-out;
+    
+}
+
+#main-menu a:hover{
+    border-bottom: 3px solid #F2C450;
+    border-top: 3px solid #F2C450;
+
+}
+
+/* slider */
+
+body,
+#slider,
+.wrap,
+.slide-content {
+  margin: 0 auto;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+.wrap {
+  position: relative;
+}
+
+.slide {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.slide1{
+  background-image: url("./melImage1.jpg");
+
+
+}
+
+.slide2{
+  background-image: url("./melImage2.jpg");
+
+}
+.slide3{
+  background-image: url("./melimage3.jpg");
+
+}
+
+.slide4{
+    background-image: url("./melImage.jpg");
+
+}
+
+.slide5{
+    background-image: url("./melpics\ 2.png");
+
+}
+
+
+.slide-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.slide-content span {
+  font-size: 5rem;
+  color: #fff;
+}
+
+.arrow {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  margin-top: -35px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+#arrow-left {
+  border-width: 30px 40px 30px 0;
+  border-color: transparent #fff transparent transparent;
+  left: 0;
+  margin-left: 30px;
+}
+
+#arrow-right {
+  border-width: 30px 0 30px 40px;
+  border-color: transparent transparent transparent #fff;
+  right: 0;
+  margin-right: 30px;
+}
+
+
+/* mid-container */
+
+.mid-container{
+    width: 1350px;
+    
+    
+}
+
+.mid-section{
+    text-align: center;
+    background-color: black;
+    height: 50vh;
+   
+}
+
+.mid-section h1{
+    border-bottom: 2px solid #F2C450;
+    width: 30%;
+    margin: 0 auto;
+    font-size: 55px;
+    text-transform: capitalize;
+    margin-bottom: 25px;
+    cursor: pointer;
+    color: #F2C450;
+    padding-top: 5%;
+}
+
+.mid-section .achievements-container{
+    line-height: 15vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+}
+
+.mid-section .achievements-container li{
+    font-size: 25px;
+    cursor: pointer;
+    margin: 0 auto;
+    height: 12vh;
+    width: auto;
+    list-style-type: none;
+    position: relative;
+    top: 50%;
+    color: #F2C450;
+    
+
+}
+
+.mid-section .achievements-container li ion-icon{
+    color: #F2C450;
+}
+
+
+.mid-section .achievements-container li:hover{
+    border-bottom: 1px solid #F2C450;
+    border-top: 1px solid #F2C450;
+}
+
+/* photo-section */
+
+
+#photo-container{
+  width: 100%;
+  background-color: black;
+
+}
+
+#photo-container .gallery{
+  color: #F2C450;
+  padding-top: 10%;
+  border-bottom: 2px solid #F2C450;
+  width: 20%;
+  letter-spacing: 2px;
+  margin: 0 auto;
+  font-size: 55px;
+  text-align: center;
+}
+
+
+.photo-section{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 0 auto;
+  grid-gap: 10px;
+  margin-top: 15%;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.image1{
+  background: url('./chiara.jpeg');
+  height: 200px;
+  width: 200px;
+  background-size: cover;
+  background-position: center center;
+  margin: 0 auto;
+  cursor: pointer;
+  transition: all .9s ease-in-out;
+
+}
+
+.image1.active{
+
+  margin: 0 auto;
+    height: 500px;
+  width: 50vh;
+}
+
+
+
+.image2{
+  background: url('./r36.jpeg');
+height: 200px;
+  width: 200px;
+  background-size: cover;
+  background-position: center center;
+  margin: 0 auto;
+  cursor: pointer;
+  transition: all .9s ease-in-out;
+  
+}
+
+.image2.active{
+  
+  margin: 0 auto;
+  background-position: top center; 
+   height: 500px;
+  width: 50vh;
+}
+
+.image3{
+  background: url('./r23.jpeg');
+  height: 200px;
+  width: 200px;
+  background-size: cover;
+  background-position: center center;
+  margin: 0 auto;
+  cursor: pointer;
+  transition: all .9s ease-in-out;
+}
+
+.image3.active{
+
+  margin: 0 auto;
+  height: 500px;
+  width: 50vh;
+}
+
+.image4{
+  background: url('./C1E6E43C-7BED-49F1-B3FC-675F4847ECD0.jpeg');
+  height: 200px;
+  width: 200px;
+  background-size: cover;
+  background-position: center center;
+  margin: 0 auto;
+  cursor: pointer;
+  transition: all .9s ease-in-out;
+}
+
+.image4.active{
+  margin: 0 auto;
+  display: hidden;
+  height: 500px;
+  width: 50vh;
+}
+
+.image5{
+  background: url('./IMG_0467.jpeg');
+  background-size: cover;
+  background-position: center center;
+  margin: 0 auto;
+  cursor: pointer;
+  transition: all .9s ease-in-out;
+  height: 200px;
+  width: 200px;
+
+}
+
+.image5.active{
+  height: 500px;
+  width: 50vh;
+  margin: 0 auto;
+  background-position: center;
+}
+
+.image6{
+  background: url('./IMG_0527.jpeg');
+  height: 200px;
+  width: 200px; 
+  background-size: cover;
+  background-position: center center;
+  margin: 0 auto;
+  cursor: pointer;
+  transition: all .9s ease-in-out;
+}
+
+.image6.active{
+ 
+  height: 500px;
+  width: 50vh;
+  margin: 0 auto;
+  display: hidden;
+}
+
+.image7{
+  background: url('./IMG_5393.png');
+   height: 200px;
+  width: 200px; 
+  background-size: cover;
+  background-position: center center;
+  margin: 0 auto;
+  cursor: pointer;
+  transition: all .9s ease-in-out;
+  
+}
+
+.image7.active{
+  height: 500px;
+  width: 50vh;
+  margin: 0 auto;
+  display: hidden;
+}
+
+.image8{
+  background: url('./IMG_0444.jpeg');
+  height: 200px;
+  width: 200px;
+  background-size: cover;
+  background-position: center center;
+  margin: 0 auto;
+  cursor: pointer;
+  transition: all .9s ease-in-out;
+
+}
+
+.image8.active{
+  height: 500px;
+  width: 50vh;  
+
+  margin: 0 auto;
+  display: hidden;
+}
+
+.image9{
+  background: url('./IMG_3489.png');
+  height: 200px;
+  width: 200px;
+  background-size: cover;
+  background-position: center center;
+  margin: 0 auto;
+  cursor: pointer;
+  transition: all .9s ease-in-out;
+}
+
+.image9.active{
+  margin: 0 auto;
+  display: hidden;
+  height: 500px;
+  width: 50vh;
+}
+
+.image10{
+  background: url('./chiara3.jpeg');
+  height: 200px;
+  width: 200px;
+  background-size: cover;
+  background-position: center center;
+  margin: 0 auto;
+  cursor: pointer;
+  transition: all .9s ease-in-out;
+}
+
+.image10.active{
+
+  margin: 0 auto;
+  display: hidden;  
+  height: 500px;
+  width: 50vh;
+}
+
+.image11{
+  background: url('./chiara2.jpeg');
+  height: 200px;
+  width: 200px;
+  background-size: cover;
+  background-position: center center;
+  margin: 0 auto;
+  cursor: pointer;
+  transition: all .9s ease-in-out;
+}
+
+.image11.active{
+
+  margin: 0 auto;
+  display: hidden;  
+  height: 500px;
+  width: 50vh;
+}
+
+.image12{
+  background: url('./IMG_0398.jpeg');
+  height: 200px;
+  width: 200px;
+  background-size: cover;
+  background-position: center center;
+  margin: 0 auto;
+  cursor: pointer;
+  transition: all .9s ease-in-out;
+}
+
+.image12.active{
+
+  margin: 0 auto;
+  display: hidden;
+    height: 500px;
+  width: 50vh;
+}
+
+.image13{
+  background: url('./IMG_0413.jpeg');
+  height: 200px;
+  width: 200px;
+  background-size: cover;
+  background-position: center center;
+  margin: 0 auto;
+  cursor: pointer;
+  transition: all .9s ease-in-out;
+}
+
+.image13.active{
+
+  margin: 0 auto;
+  display: hidden;
+    height: 500px;
+  width: 50vh;
+}
+
+.image14{
+  background: url('./shad28.jpeg');
+  height: 200px;
+  width: 200px;
+  background-size: cover;
+  background-position: center center;
+  margin: 0 auto;
+  cursor: pointer;
+  transition: all .9s ease-in-out;
+}
+
+
+.image14.active{
+
+  margin: 0 auto;
+  display: hidden;
+    height: 500px;
+  width: 50vh;
+}
+
+.image15{
+  background: url('./IMG_9403.jpeg');
+  height: 200px;
+  width: 200px;
+  background-size: cover;
+  background-position: center center;
+  margin: 0 auto;
+  cursor: pointer;
+  transition: all .9s ease-in-out;
+
+}
+
+.image15.active{
+
+  margin: 0 auto;
+  display: hidden;
+    height: 500px;
+  width: 50vh;
+}
+
+/* contact */
+
+
+#contact-container{
+  background-color: black;
+  height: 50vh;
+}
+.contact-section{
+  text-align: center;
+}
+
+label{
+  display: grid;
+  grid-template-rows: 1fr;
+  width: 20%;
+  font-size: 35px;
+  height: 10vh;
+  margin: 0 auto;
+}
+
+#name-box{
+  font-size: 30px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 2px solid #fff;
+  color: white;
+  background-color: black;
+  height: 5vh;
+}
+
+#email-box{
+  font-size: 30px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 2px solid #fff;
+  color: white;
+  background-color: black;
+  height: 5vh;
+}
+
+.contact-text{
+  margin: 0 auto;
+  padding-top: 10%;
+  font-size: 55px;
+  margin-bottom: 5%;
+  color: #F2C450;
+  border-bottom: 1px solid #F2C450;
+  width: 35%;
+  cursor: pointer;
+  
+}
+
+#submit{ 
+  width: 30%;
+  margin: 0 auto;
+  margin-top: 5%;
+  padding: 10px 10px;
+  background-color: black;
+  color: #F2C450;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all .4s ease-in-out;
+  letter-spacing: 1px;
+
+}
+
+#submit:hover{ 
+font-weight: 700;
+
+}
+
+/* footer */
+
+#footer-container{
+  padding-top: 5%;
+  background-color: black;
+  margin: 0 auto;
+}
+
+.socialMediaIcons ion-icon{
+  color: #F2C450;
+  padding-top: 5%;
+  padding: 15px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.socialMediaIcons{
+  margin: 0 auto;
+  text-align: center;
+}
+
+.footer-section h1{
+  text-align: center;
+  color: #F2C450;
+  border-bottom: 1px solid #F2C450;
+  width: 30%;
+  margin: 0 auto;
+  padding-bottom: 5px;
+  letter-spacing: 1px;
+  margin-bottom: 5px;
+}
+
+/* MEDIA QUERIES */
+
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+
+/* iPhone 6, 6S, 7 and 8 Portrait */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) { 
+
+    #container{
+      width: 1350px;
+      height: auto;
+    }
+    
+    #menu-btn ion-icon{
+      color: #F2C450;
+      font-size: 60px;
+      cursor: pointer;
+      padding: 5px;
+      background-color: black;
+      position: relative;
+      top: 30%;
+      left: 60%;
+    }
+
+    #hr{
+      width: 1350px;
+    }
+
+    #main-menu{
+      height: 20vh;
+    }
+
+    .mobile-menu{
+      display: grid;
+      grid-template-columns: 1fr;
+      padding: 10px 10px;
+      text-align: center;
+      background-color: black;
+      height: 50vh;
+      
+    }
+
+    .mobile-menu.active{
+      position: absolute;
+      
+    }
+
+    .mobile-menu a{
+      color: #F2C450;
+      text-decoration: none;
+      text-align: center;
+      margin: 0 auto;
+      font-size: 35px;
+      padding-bottom: 20px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      cursor: pointer;
+    }
+
+    #main-menu .logo-container{
+      margin: 0 auto;
+      padding-top: 2.5%;
+      font-size: 50px;
+      cursor: pointer;
+    }
+
+    #main-menu a{
+      display: none;
+    }
+
+    #mid-container{
+      width: 1350px;
+      height: auto;
+    }
+
+    #photo-container{
+      width: 1350px;
+    }
+
+    #contact-container{
+      width: 1350px;
+    }
+
+    #name-box{
+      font-size: 30px;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      border-bottom: 2px solid #fff;
+      color: white;
+      background-color: black;
+      height: 5vh;
+      margin-bottom: 20px;
+    }
+    
+    #email-box{
+      font-size: 30px;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      border-bottom: 2px solid #fff;
+      color: white;
+      background-color: black;
+      height: 5vh;
+    }
+
+    #footer-container{
+      width: 1350px;
+      padding-top: 40%;
+    }
+
+}
+
+/* iPhone 6, 6S, 7 and 8 Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) { 
+
+    #container{
+      width: 1350px;
+      height: auto;
+    }
+    
+    #menu-btn ion-icon{
+      color: #F2C450;
+      font-size: 60px;
+      cursor: pointer;
+      padding: 5px;
+      background-color: black;
+      position: relative;
+      top: 30%;
+      left: 60%;
+    }
+
+
+    #main-menu{
+      height: 30vh;
+    }
+
+    body,
+    #slider,
+    .wrap,
+    .slide-content {
+      margin: 0 auto;
+      padding: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      width: 100%;
+      height: 120vh;
+      overflow-x: hidden;
+    }
+
+
+    .slide {
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    
+    .slide1{
+      background-image: url("./melImage1.jpg");
+      background-position: center 20%;
+    
+    
+    }
+    
+    .slide2{
+      background-image: url("./melImage2.jpg");
+      background-position: center 40%;
+    
+    }
+    .slide3{
+      background-image: url("./melimage3.jpg");
+      background-position: center 25%;
+    
+    }
+    
+    .slide4{
+        background-image: url("./melImage.jpg");
+        background-position: center center;
+    
+    }
+    
+    .slide5{
+        background-image: url("./melpics\ 2.png");
+        background-position: center 40%;
+    
+    }
+
+    .mobile-menu{
+      display: grid;
+      grid-template-columns: 1fr;
+      padding: 10px 10px;
+      text-align: center;
+      background-color: black;
+      height: 65vh;
+      transition: all .8s ease-in-out;
+      
+    }
+
+    .mobile-menu.active{
+      position: absolute;
+      
+    }
+
+    .mobile-menu a{
+      color: #F2C450;
+      text-decoration: none;
+      text-align: center;
+      margin: 0 auto;
+      font-size: 35px;
+      padding-bottom: 20px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      cursor: pointer;
+    }
+
+    .image1{
+      background: url('./chiara.jpeg');
+      height: 200px;
+      width: 200px;
+      background-size: cover;
+      background-position: center center;
+      margin: 0 auto;
+      cursor: pointer;
+      transition: all .9s ease-in-out;
+    
+    }
+    
+    .image1.active{
+    
+      margin: 0 auto;
+      height: 400px;
+      width: 100vh;
+    }
+    
+    
+    
+    .image2{
+      background: url('./r36.jpeg');
+    height: 200px;
+      width: 200px;
+      background-size: cover;
+      background-position: center center;
+      margin: 0 auto;
+      cursor: pointer;
+      transition: all .9s ease-in-out;
+      
+    }
+    
+    .image2.active{
+      
+      margin: 0 auto;
+      background-position: top center; 
+      height: 400px;
+      width: 100vh;
+    }
+    
+    .image3{
+      background: url('./r23.jpeg');
+      height: 200px;
+      width: 200px;
+      background-size: cover;
+      background-position: center center;
+      margin: 0 auto;
+      cursor: pointer;
+      transition: all .9s ease-in-out;
+    }
+    
+    .image3.active{
+    
+      margin: 0 auto;
+      height: 400px;
+      width: 100vh;
+    }
+    
+    .image4{
+      background: url('./C1E6E43C-7BED-49F1-B3FC-675F4847ECD0.jpeg');
+      height: 200px;
+      width: 200px;
+      background-size: cover;
+      background-position: center center;
+      margin: 0 auto;
+      cursor: pointer;
+      transition: all .9s ease-in-out;
+    }
+    
+    .image4.active{
+      margin: 0 auto;
+      display: hidden;
+      height: 400px;
+      width: 100vh;
+    }
+    
+    .image5{
+      background: url('./IMG_0467.jpeg');
+      background-size: cover;
+      background-position: center center;
+      margin: 0 auto;
+      cursor: pointer;
+      transition: all .9s ease-in-out;
+      height: 200px;
+      width: 200px;
+    
+    }
+    
+    .image5.active{
+      height: 400px;
+      width: 100vh;
+      margin: 0 auto;
+      background-position: center;
+    }
+    
+    .image6{
+      background: url('./IMG_0527.jpeg');
+      height: 200px;
+      width: 200px; 
+      background-size: cover;
+      background-position: center center;
+      margin: 0 auto;
+      cursor: pointer;
+      transition: all .9s ease-in-out;
+    }
+    
+    .image6.active{
+     
+      height: 400px;
+      width: 100vh;
+      margin: 0 auto;
+      display: hidden;
+    }
+    
+    .image7{
+      background: url('./IMG_5393.png');
+       height: 200px;
+      width: 200px; 
+      background-size: cover;
+      background-position: center center;
+      margin: 0 auto;
+      cursor: pointer;
+      transition: all .9s ease-in-out;
+      
+    }
+    
+    .image7.active{
+      height: 400px;
+      width: 100vh;
+      margin: 0 auto;
+      display: hidden;
+    }
+    
+    .image8{
+      background: url('./IMG_0444.jpeg');
+      height: 200px;
+      width: 200px;
+      background-size: cover;
+      background-position: center center;
+      margin: 0 auto;
+      cursor: pointer;
+      transition: all .9s ease-in-out;
+    
+    }
+    
+    .image8.active{
+      height: 400px;
+      width: 100vh; 
+    
+      margin: 0 auto;
+      display: hidden;
+    }
+    
+    .image9{
+      background: url('./IMG_3489.png');
+      height: 200px;
+      width: 200px;
+      background-size: cover;
+      background-position: center center;
+      margin: 0 auto;
+      cursor: pointer;
+      transition: all .9s ease-in-out;
+    }
+    
+    .image9.active{
+      margin: 0 auto;
+      display: hidden;
+      height: 400px;
+      width: 100vh;
+    }
+    
+    .image10{
+      background: url('./chiara3.jpeg');
+      height: 200px;
+      width: 200px;
+      background-size: cover;
+      background-position: center center;
+      margin: 0 auto;
+      cursor: pointer;
+      transition: all .9s ease-in-out;
+    }
+    
+    .image10.active{
+    
+      margin: 0 auto;
+      display: hidden;  
+      height: 400px;
+      width: 100vh;
+    }
+    
+    .image11{
+      background: url('./chiara2.jpeg');
+      height: 200px;
+      width: 200px;
+      background-size: cover;
+      background-position: center center;
+      margin: 0 auto;
+      cursor: pointer;
+      transition: all .9s ease-in-out;
+    }
+    
+    .image11.active{
+    
+      margin: 0 auto;
+      display: hidden;  
+      height: 400px;
+      width: 100vh;
+    }
+    
+    .image12{
+      background: url('./IMG_0398.jpeg');
+      height: 200px;
+      width: 200px;
+      background-size: cover;
+      background-position: center center;
+      margin: 0 auto;
+      cursor: pointer;
+      transition: all .9s ease-in-out;
+    }
+    
+    .image12.active{
+    
+      margin: 0 auto;
+      display: hidden;
+      height: 400px;
+      width: 100vh;
+    }
+    
+    .image13{
+      background: url('./IMG_0413.jpeg');
+      height: 200px;
+      width: 200px;
+      background-size: cover;
+      background-position: center center;
+      margin: 0 auto;
+      cursor: pointer;
+      transition: all .9s ease-in-out;
+    }
+    
+    .image13.active{
+    
+      margin: 0 auto;
+      display: hidden;
+      height: 400px;
+      width: 100vh;
+    }
+    
+    .image14{
+      background: url('./shad28.jpeg');
+      height: 200px;
+      width: 200px;
+      background-size: cover;
+      background-position: center center;
+      margin: 0 auto;
+      cursor: pointer;
+      transition: all .9s ease-in-out;
+    }
+    
+    
+    .image14.active{
+    
+      margin: 0 auto;
+      display: hidden;
+      height: 400px;
+      width: 100vh;
+    }
+    
+    .image15{
+      background: url('./IMG_9403.jpeg');
+      height: 200px;
+      width: 200px;
+      background-size: cover;
+      background-position: center center;
+      margin: 0 auto;
+      cursor: pointer;
+      transition: all .9s ease-in-out;
+    
+    }
+    
+    .image15.active{
+    
+      margin: 0 auto;
+      display: hidden;
+      height: 400px;
+      width: 100vh;
+    }
+
+    #main-menu .logo-container{
+      margin: 0 auto;
+      padding-top: 2.5%;
+      font-size: 50px;
+      cursor: pointer;
+    }
+
+    #main-menu a{
+      display: none;
+    }
+
+    #mid-container{
+      width: 1350px;
+      height: auto;
+    }
+
+    #photo-container{
+      width: 1350px;
+    }
+
+    #contact-container{
+      width: 1350px;
+    }
+
+    #name-box{
+      font-size: 30px;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      border-bottom: 2px solid #fff;
+      color: white;
+      background-color: black;
+      height: 10vh;
+      margin-bottom: 20px;
+    }
+    
+    #email-box{
+      font-size: 30px;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      border-bottom: 2px solid #fff;
+      color: white;
+      background-color: black;
+      height: 10vh;
+    }
+
+    #footer-container{
+      width: 1350px;
+      padding-top: 40%;
+    }
+
+
+}
+
+/* ----------- iPhone 6+, 7+ and 8+ ----------- */
+
+
+/* iPhone 6+, 7+ and 8+ Portrait */
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) { 
+
+
+    #container{
+      width: 1700px;
+      height: auto;
+    }
+    
+    #menu-btn ion-icon{
+      color: #F2C450;
+      font-size: 60px;
+      cursor: pointer;
+      padding: 5px;
+      background-color: black;
+      position: relative;
+      top: 30%;
+      left: 60%;
+    }
+
+
+    #main-menu{
+      height: 30vh;
+    }
+
+    body,
+    #slider,
+    .wrap,
+    .slide-content {
+      margin: 0 auto;
+      padding: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      width: 100%;
+      height: 120vh;
+      overflow-x: hidden;
+    }
+
+
+    .slide {
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    
+    .slide1{
+      background-image: url("./melImage1.jpg");
+      background-position: center 20%;
+    
+    
+    }
+    
+    .slide2{
+      background-image: url("./melImage2.jpg");
+      background-position: center 40%;
+    
+    }
+    .slide3{
+      background-image: url("./melimage3.jpg");
+      background-position: center 25%;
+    
+    }
+    
+    .slide4{
+        background-image: url("./melImage.jpg");
+        background-position: center center;
+    
+    }
+    
+    .slide5{
+        background-image: url("./melpics\ 2.png");
+        background-position: center 40%;
+    
+    }
+
+    .mobile-menu{
+      display: grid;
+      grid-template-columns: 1fr;
+      padding: 10px 10px;
+      text-align: center;
+      background-color: black;
+      height: 65vh;
+      transition: all .8s ease-in-out;
+      
+    }
+
+    .mobile-menu.active{
+      position: absolute;
+      
+    }
+
+    .mobile-menu a{
+      color: #F2C450;
+      text-decoration: none;
+      text-align: center;
+      margin: 0 auto;
+      font-size: 35px;
+      padding-bottom: 20px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      cursor: pointer;
+    }
+
+    .image1{
+      background: url('./chiara.jpeg');
+      height: 200px;
+      width: 200px;
+      background-size: cover;
+      background-position: center center;
+      margin: 0 auto;
+      cursor: pointer;
+      transition: all .9s ease-in-out;
+    
+    }
+    
+    .image1.active{
+    
+      margin: 0 auto;
+      height: 300px;
+      width: 70vh;
+    }
+    
+    
+    
+    .image2{
+      background: url('./r36.jpeg');
+    height: 200px;
+      width: 200px;
+      background-size: cover;
+      background-position: center center;
+      margin: 0 auto;
+      cursor: pointer;
+      transition: all .9s ease-in-out;
+      
+    }
+    
+    .image2.active{
+      
+      margin: 0 auto;
+      background-position: top center; 
+      height: 300px;
+      width: 70vh;
+    }
+    
+    .image3{
+      background: url('./r23.jpeg');
+      height: 200px;
+      width: 200px;
+      background-size: cover;
+      background-position: center center;
+      margin: 0 auto;
+      cursor: pointer;
+      transition: all .9s ease-in-out;
+    }
+    
+    .image3.active{
+    
+      margin: 0 auto;
+      height: 300px;
+      width: 70vh;
+    }
+    
+    .image4{
+      background: url('./C1E6E43C-7BED-49F1-B3FC-675F4847ECD0.jpeg');
+      height: 200px;
+      width: 200px;
+      background-size: cover;
+      background-position: center center;
+      margin: 0 auto;
+      cursor: pointer;
+      transition: all .9s ease-in-out;
+    }
+    
+    .image4.active{
+      margin: 0 auto;
+      display: hidden;
+      height: 300px;
+      width: 70vh;
+    }
+    
+    .image5{
+      background: url('./IMG_0467.jpeg');
+      background-size: cover;
+      background-position: center center;
+      margin: 0 auto;
+      cursor: pointer;
+      transition: all .9s ease-in-out;
+      height: 200px;
+      width: 200px;
+    
+    }
+    
+    .image5.active{
+      height: 300px;
+      width: 70vh;
+      margin: 0 auto;
+      background-position: center;
+    }
+    
+    .image6{
+      background: url('./IMG_0527.jpeg');
+      height: 200px;
+      width: 200px; 
+      background-size: cover;
+      background-position: center center;
+      margin: 0 auto;
+      cursor: pointer;
+      transition: all .9s ease-in-out;
+    }
+    
+    .image6.active{
+     
+      height: 300px;
+      width: 70vh;
+      margin: 0 auto;
+      display: hidden;
+    }
+    
+    .image7{
+      background: url('./IMG_5393.png');
+       height: 200px;
+      width: 200px; 
+      background-size: cover;
+      background-position: center center;
+      margin: 0 auto;
+      cursor: pointer;
+      transition: all .9s ease-in-out;
+      
+    }
+    
+    .image7.active{
+      height: 300px;
+      width: 70vh;
+      margin: 0 auto;
+      display: hidden;
+    }
+    
+    .image8{
+      background: url('./IMG_0444.jpeg');
+      height: 200px;
+      width: 200px;
+      background-size: cover;
+      background-position: center center;
+      margin: 0 auto;
+      cursor: pointer;
+      transition: all .9s ease-in-out;
+    
+    }
+    
+    .image8.active{
+      height: 300px;
+      width: 70vh;
+      margin: 0 auto;
+      display: hidden;
+    }
+    
+    .image9{
+      background: url('./IMG_3489.png');
+      height: 200px;
+      width: 200px;
+      background-size: cover;
+      background-position: center center;
+      margin: 0 auto;
+      cursor: pointer;
+      transition: all .9s ease-in-out;
+    }
+    
+    .image9.active{
+      margin: 0 auto;
+      display: hidden;
+      height: 300px;
+      width: 70vh;
+    }
+    
+    .image10{
+      background: url('./chiara3.jpeg');
+      height: 200px;
+      width: 200px;
+      background-size: cover;
+      background-position: center center;
+      margin: 0 auto;
+      cursor: pointer;
+      transition: all .9s ease-in-out;
+    }
+    
+    .image10.active{
+    
+      margin: 0 auto;
+      display: hidden;  
+      height: 300px;
+      width: 70vh;
+    }
+    
+    .image11{
+      background: url('./chiara2.jpeg');
+      height: 200px;
+      width: 200px;
+      background-size: cover;
+      background-position: center center;
+      margin: 0 auto;
+      cursor: pointer;
+      transition: all .9s ease-in-out;
+    }
+    
+    .image11.active{
+    
+      margin: 0 auto;
+      display: hidden;  
+      height: 300px;
+      width: 70vh;
+    }
+    
+    .image12{
+      background: url('./IMG_0398.jpeg');
+      height: 200px;
+      width: 200px;
+      background-size: cover;
+      background-position: center center;
+      margin: 0 auto;
+      cursor: pointer;
+      transition: all .9s ease-in-out;
+    }
+    
+    .image12.active{
+    
+      margin: 0 auto;
+      display: hidden;
+      height: 300px;
+      width: 70vh;
+    }
+    
+    .image13{
+      background: url('./IMG_0413.jpeg');
+      height: 200px;
+      width: 200px;
+      background-size: cover;
+      background-position: center center;
+      margin: 0 auto;
+      cursor: pointer;
+      transition: all .9s ease-in-out;
+    }
+    
+    .image13.active{
+    
+      margin: 0 auto;
+      display: hidden;
+      height: 300px;
+      width: 70vh;
+    }
+    
+    .image14{
+      background: url('./shad28.jpeg');
+      height: 200px;
+      width: 200px;
+      background-size: cover;
+      background-position: center center;
+      margin: 0 auto;
+      cursor: pointer;
+      transition: all .9s ease-in-out;
+    }
+    
+    
+    .image14.active{
+    
+      margin: 0 auto;
+      display: hidden;
+      height: 300px;
+      width: 70vh;
+    }
+    
+    .image15{
+      background: url('./IMG_9403.jpeg');
+      height: 200px;
+      width: 200px;
+      background-size: cover;
+      background-position: center center;
+      margin: 0 auto;
+      cursor: pointer;
+      transition: all .9s ease-in-out;
+    
+    }
+    
+    .image15.active{
+    
+      margin: 0 auto;
+      display: hidden;
+      height: 300px;
+      width: 70vh;
+    }
+
+    #main-menu .logo-container{
+      margin: 0 auto;
+      padding-top: 2.5%;
+      font-size: 50px;
+      cursor: pointer;
+    }
+
+    #main-menu a{
+      display: none;
+    }
+
+    #mid-container{
+      width: 1700px;
+      height: auto;
+    }
+
+    #photo-container{
+      width: 1700px;
+      background-color: black;
+    }
+
+    .photo-section{
+      width: 100%;
+      background-color: black;
+    }
+
+    #contact-container{
+      width: 1700px;
+    }
+
+    #name-box{
+      font-size: 30px;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      border-bottom: 2px solid #fff;
+      color: white;
+      background-color: black;
+      height: 5vh;
+      margin-bottom: 20px;
+    }
+    
+    #email-box{
+      font-size: 30px;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      border-bottom: 2px solid #fff;
+      color: white;
+      background-color: black;
+      height: 5vh;
+    }
+
+    #footer-container{
+      width: 1700px;
+      padding-top: 40%;
+    }
+
+
+}
+
+/* iPhone 6+, 7+ and 8+ Landscape */
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) { 
+
+    #container{
+      width: 1350px;
+      height: auto;
+    }
+    
+    #menu-btn ion-icon{
+      color: #F2C450;
+      font-size: 60px;
+      cursor: pointer;
+      padding: 5px;
+      background-color: black;
+      position: relative;
+      top: 30%;
+      left: 60%;
+    }
+
+
+    #main-menu{
+      height: 30vh;
+    }
+
+    body,
+    #slider,
+    .wrap,
+    .slide-content {
+      margin: 0 auto;
+      padding: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      width: 100%;
+      height: 120vh;
+      overflow-x: hidden;
+    }
+
+
+    .slide {
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    
+    .slide1{
+      background-image: url("./melImage1.jpg");
+      background-position: center 20%;
+    
+    
+    }
+    
+    .slide2{
+      background-image: url("./melImage2.jpg");
+      background-position: center 40%;
+    
+    }
+    .slide3{
+      background-image: url("./melimage3.jpg");
+      background-position: center 25%;
+    
+    }
+    
+    .slide4{
+        background-image: url("./melImage.jpg");
+        background-position: center center;
+    
+    }
+    
+    .slide5{
+        background-image: url("./melpics\ 2.png");
+        background-position: center 40%;
+    
+    }
+
+    .mobile-menu{
+      display: grid;
+      grid-template-columns: 1fr;
+      padding: 10px 10px;
+      text-align: center;
+      background-color: black;
+      height: 65vh;
+      transition: all .8s ease-in-out;
+      
+    }
+
+    .mobile-menu.active{
+      position: absolute;
+      
+    }
+
+    .mobile-menu a{
+      color: #F2C450;
+      text-decoration: none;
+      text-align: center;
+      margin: 0 auto;
+      font-size: 35px;
+      padding-bottom: 20px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      cursor: pointer;
+    }
+
+    .image1{
+      background: url('./chiara.jpeg');
+      height: 200px;
+      width: 200px;
+      background-size: cover;
+      background-position: center center;
+      margin: 0 auto;
+      cursor: pointer;
+      transition: all .9s ease-in-out;
+    
+    }
+    
+    .image1.active{
+    
+      margin: 0 auto;
+      height: 400px;
+      width: 100vh;
+    }
+    
+    
+    
+    .image2{
+      background: url('./r36.jpeg');
+    height: 200px;
+      width: 200px;
+      background-size: cover;
+      background-position: center center;
+      margin: 0 auto;
+      cursor: pointer;
+      transition: all .9s ease-in-out;
+      
+    }
+    
+    .image2.active{
+      
+      margin: 0 auto;
+      background-position: top center; 
+      height: 400px;
+      width: 100vh;
+    }
+    
+    .image3{
+      background: url('./r23.jpeg');
+      height: 200px;
+      width: 200px;
+      background-size: cover;
+      background-position: center center;
+      margin: 0 auto;
+      cursor: pointer;
+      transition: all .9s ease-in-out;
+    }
+    
+    .image3.active{
+    
+      margin: 0 auto;
+      height: 400px;
+      width: 100vh;
+    }
+    
+    .image4{
+      background: url('./C1E6E43C-7BED-49F1-B3FC-675F4847ECD0.jpeg');
+      height: 200px;
+      width: 200px;
+      background-size: cover;
+      background-position: center center;
+      margin: 0 auto;
+      cursor: pointer;
+      transition: all .9s ease-in-out;
+    }
+    
+    .image4.active{
+      margin: 0 auto;
+      display: hidden;
+      height: 400px;
+      width: 100vh;
+    }
+    
+    .image5{
+      background: url('./IMG_0467.jpeg');
+      background-size: cover;
+      background-position: center center;
+      margin: 0 auto;
+      cursor: pointer;
+      transition: all .9s ease-in-out;
+      height: 200px;
+      width: 200px;
+    
+    }
+    
+    .image5.active{
+      height: 400px;
+      width: 100vh;
+      margin: 0 auto;
+      background-position: center;
+    }
+    
+    .image6{
+      background: url('./IMG_0527.jpeg');
+      height: 200px;
+      width: 200px; 
+      background-size: cover;
+      background-position: center center;
+      margin: 0 auto;
+      cursor: pointer;
+      transition: all .9s ease-in-out;
+    }
+    
+    .image6.active{
+     
+      height: 400px;
+      width: 100vh;
+      margin: 0 auto;
+      display: hidden;
+    }
+    
+    .image7{
+      background: url('./IMG_5393.png');
+       height: 200px;
+      width: 200px; 
+      background-size: cover;
+      background-position: center center;
+      margin: 0 auto;
+      cursor: pointer;
+      transition: all .9s ease-in-out;
+      
+    }
+    
+    .image7.active{
+      height: 400px;
+      width: 100vh;
+      margin: 0 auto;
+      display: hidden;
+    }
+    
+    .image8{
+      background: url('./IMG_0444.jpeg');
+      height: 200px;
+      width: 200px;
+      background-size: cover;
+      background-position: center center;
+      margin: 0 auto;
+      cursor: pointer;
+      transition: all .9s ease-in-out;
+    
+    }
+    
+    .image8.active{
+      height: 400px;
+      width: 100vh; 
+    
+      margin: 0 auto;
+      display: hidden;
+    }
+    
+    .image9{
+      background: url('./IMG_3489.png');
+      height: 200px;
+      width: 200px;
+      background-size: cover;
+      background-position: center center;
+      margin: 0 auto;
+      cursor: pointer;
+      transition: all .9s ease-in-out;
+    }
+    
+    .image9.active{
+      margin: 0 auto;
+      display: hidden;
+      height: 400px;
+      width: 100vh;
+    }
+    
+    .image10{
+      background: url('./chiara3.jpeg');
+      height: 200px;
+      width: 200px;
+      background-size: cover;
+      background-position: center center;
+      margin: 0 auto;
+      cursor: pointer;
+      transition: all .9s ease-in-out;
+    }
+    
+    .image10.active{
+    
+      margin: 0 auto;
+      display: hidden;  
+      height: 400px;
+      width: 100vh;
+    }
+    
+    .image11{
+      background: url('./chiara2.jpeg');
+      height: 200px;
+      width: 200px;
+      background-size: cover;
+      background-position: center center;
+      margin: 0 auto;
+      cursor: pointer;
+      transition: all .9s ease-in-out;
+    }
+    
+    .image11.active{
+    
+      margin: 0 auto;
+      display: hidden;  
+      height: 400px;
+      width: 100vh;
+    }
+    
+    .image12{
+      background: url('./IMG_0398.jpeg');
+      height: 200px;
+      width: 200px;
+      background-size: cover;
+      background-position: center center;
+      margin: 0 auto;
+      cursor: pointer;
+      transition: all .9s ease-in-out;
+    }
+    
+    .image12.active{
+    
+      margin: 0 auto;
+      display: hidden;
+      height: 400px;
+      width: 100vh;
+    }
+    
+    .image13{
+      background: url('./IMG_0413.jpeg');
+      height: 200px;
+      width: 200px;
+      background-size: cover;
+      background-position: center center;
+      margin: 0 auto;
+      cursor: pointer;
+      transition: all .9s ease-in-out;
+    }
+    
+    .image13.active{
+    
+      margin: 0 auto;
+      display: hidden;
+      height: 400px;
+      width: 100vh;
+    }
+    
+    .image14{
+      background: url('./shad28.jpeg');
+      height: 200px;
+      width: 200px;
+      background-size: cover;
+      background-position: center center;
+      margin: 0 auto;
+      cursor: pointer;
+      transition: all .9s ease-in-out;
+    }
+    
+    
+    .image14.active{
+    
+      margin: 0 auto;
+      display: hidden;
+      height: 400px;
+      width: 100vh;
+    }
+    
+    .image15{
+      background: url('./IMG_9403.jpeg');
+      height: 200px;
+      width: 200px;
+      background-size: cover;
+      background-position: center center;
+      margin: 0 auto;
+      cursor: pointer;
+      transition: all .9s ease-in-out;
+    
+    }
+    
+    .image15.active{
+    
+      margin: 0 auto;
+      display: hidden;
+      height: 400px;
+      width: 100vh;
+    }
+
+    #main-menu .logo-container{
+      margin: 0 auto;
+      padding-top: 2.5%;
+      font-size: 50px;
+      cursor: pointer;
+    }
+
+    #main-menu a{
+      display: none;
+    }
+
+    #mid-container{
+      width: 1350px;
+      height: auto;
+    }
+
+    #photo-container{
+      width: 1350px;
+    }
+
+    #contact-container{
+      width: 1350px;
+    }
+
+    #name-box{
+      font-size: 30px;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      border-bottom: 2px solid #fff;
+      color: white;
+      background-color: black;
+      height: 10vh;
+      margin-bottom: 20px;
+    }
+    
+    #email-box{
+      font-size: 30px;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      border-bottom: 2px solid #fff;
+      color: white;
+      background-color: black;
+      height: 10vh;
+    }
+
+    #footer-container{
+      width: 1350px;
+      padding-top: 40%;
+    }
+
+
+
+
+}
+
+/* iPhone X Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) { 
+
+    #container{
+      width: 1350px;
+      height: auto;
+    }
+    
+    #menu-btn ion-icon{
+      color: #F2C450;
+      font-size: 60px;
+      cursor: pointer;
+      padding: 5px;
+      background-color: black;
+      position: relative;
+      top: 30%;
+      left: 60%;
+    }
+
+    #hr{
+      width: 1350px;
+    }
+
+    #main-menu{
+      height: 30vh;
+    }
+
+    .mobile-menu{
+      display: grid;
+      grid-template-columns: 1fr;
+      padding: 10px 10px;
+      text-align: center;
+      background-color: black;
+      height: 60vh;
+      
+    }
+
+    .mobile-menu.active{
+      position: absolute;
+      
+    }
+
+    .mobile-menu a{
+      color: #F2C450;
+      text-decoration: none;
+      text-align: center;
+      margin: 0 auto;
+      font-size: 35px;
+      padding-bottom: 20px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      cursor: pointer;
+    }
+
+    #main-menu .logo-container{
+      margin: 0 auto;
+      padding-top: 2.5%;
+      font-size: 50px;
+      cursor: pointer;
+    }
+
+    #main-menu a{
+      display: none;
+    }
+
+    #mid-container{
+      width: 1350px;
+      height: auto;
+    }
+
+    #photo-container{
+      width: 1350px;
+    }
+
+    .slide {
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    
+    .slide1{
+      background-image: url("./melImage1.jpg");
+      background-position: center 20%;
+    
+    
+    }
+    
+    .slide2{
+      background-image: url("./melImage2.jpg");
+      background-position: center 40%;
+    
+    }
+    .slide3{
+      background-image: url("./melimage3.jpg");
+      background-position: center 25%;
+    
+    }
+    
+    .slide4{
+        background-image: url("./melImage.jpg");
+        background-position: center center;
+    
+    }
+    
+    .slide5{
+        background-image: url("./melpics\ 2.png");
+        background-position: center 40%;
+    
+    }
+
+
+    .image1{
+      background: url('./chiara.jpeg');
+      height: 200px;
+      width: 200px;
+      background-size: cover;
+      background-position: center center;
+      margin: 0 auto;
+      cursor: pointer;
+      transition: all .9s ease-in-out;
+    
+    }
+    
+    .image1.active{
+    
+      margin: 0 auto;
+      height: 400px;
+      width: 100vh;
+    }
+    
+    
+    
+    .image2{
+      background: url('./r36.jpeg');
+    height: 200px;
+      width: 200px;
+      background-size: cover;
+      background-position: center center;
+      margin: 0 auto;
+      cursor: pointer;
+      transition: all .9s ease-in-out;
+      
+    }
+    
+    .image2.active{
+      
+      margin: 0 auto;
+      background-position: top center; 
+      height: 400px;
+      width: 100vh;
+    }
+    
+    .image3{
+      background: url('./r23.jpeg');
+      height: 200px;
+      width: 200px;
+      background-size: cover;
+      background-position: center center;
+      margin: 0 auto;
+      cursor: pointer;
+      transition: all .9s ease-in-out;
+    }
+    
+    .image3.active{
+    
+      margin: 0 auto;
+      height: 400px;
+      width: 100vh;
+    }
+    
+    .image4{
+      background: url('./C1E6E43C-7BED-49F1-B3FC-675F4847ECD0.jpeg');
+      height: 200px;
+      width: 200px;
+      background-size: cover;
+      background-position: center center;
+      margin: 0 auto;
+      cursor: pointer;
+      transition: all .9s ease-in-out;
+    }
+    
+    .image4.active{
+      margin: 0 auto;
+      display: hidden;
+      height: 400px;
+      width: 100vh;
+    }
+    
+    .image5{
+      background: url('./IMG_0467.jpeg');
+      background-size: cover;
+      background-position: center center;
+      margin: 0 auto;
+      cursor: pointer;
+      transition: all .9s ease-in-out;
+      height: 200px;
+      width: 200px;
+    
+    }
+    
+    .image5.active{
+      height: 400px;
+      width: 100vh;
+      margin: 0 auto;
+      background-position: center;
+    }
+    
+    .image6{
+      background: url('./IMG_0527.jpeg');
+      height: 200px;
+      width: 200px; 
+      background-size: cover;
+      background-position: center center;
+      margin: 0 auto;
+      cursor: pointer;
+      transition: all .9s ease-in-out;
+    }
+    
+    .image6.active{
+     
+      height: 400px;
+      width: 100vh;
+      margin: 0 auto;
+      display: hidden;
+    }
+    
+    .image7{
+      background: url('./IMG_5393.png');
+       height: 200px;
+      width: 200px; 
+      background-size: cover;
+      background-position: center center;
+      margin: 0 auto;
+      cursor: pointer;
+      transition: all .9s ease-in-out;
+      
+    }
+    
+    .image7.active{
+      height: 400px;
+      width: 100vh;
+      margin: 0 auto;
+      display: hidden;
+    }
+    
+    .image8{
+      background: url('./IMG_0444.jpeg');
+      height: 200px;
+      width: 200px;
+      background-size: cover;
+      background-position: center center;
+      margin: 0 auto;
+      cursor: pointer;
+      transition: all .9s ease-in-out;
+    
+    }
+    
+    .image8.active{
+      height: 400px;
+      width: 100vh; 
+    
+      margin: 0 auto;
+      display: hidden;
+    }
+    
+    .image9{
+      background: url('./IMG_3489.png');
+      height: 200px;
+      width: 200px;
+      background-size: cover;
+      background-position: center center;
+      margin: 0 auto;
+      cursor: pointer;
+      transition: all .9s ease-in-out;
+    }
+    
+    .image9.active{
+      margin: 0 auto;
+      display: hidden;
+      height: 400px;
+      width: 100vh;
+    }
+    
+    .image10{
+      background: url('./chiara3.jpeg');
+      height: 200px;
+      width: 200px;
+      background-size: cover;
+      background-position: center center;
+      margin: 0 auto;
+      cursor: pointer;
+      transition: all .9s ease-in-out;
+    }
+    
+    .image10.active{
+    
+      margin: 0 auto;
+      display: hidden;  
+      height: 400px;
+      width: 100vh;
+    }
+    
+    .image11{
+      background: url('./chiara2.jpeg');
+      height: 200px;
+      width: 200px;
+      background-size: cover;
+      background-position: center center;
+      margin: 0 auto;
+      cursor: pointer;
+      transition: all .9s ease-in-out;
+    }
+    
+    .image11.active{
+    
+      margin: 0 auto;
+      display: hidden;  
+      height: 400px;
+      width: 100vh;
+    }
+    
+    .image12{
+      background: url('./IMG_0398.jpeg');
+      height: 200px;
+      width: 200px;
+      background-size: cover;
+      background-position: center center;
+      margin: 0 auto;
+      cursor: pointer;
+      transition: all .9s ease-in-out;
+    }
+    
+    .image12.active{
+    
+      margin: 0 auto;
+      display: hidden;
+      height: 400px;
+      width: 100vh;
+    }
+    
+    .image13{
+      background: url('./IMG_0413.jpeg');
+      height: 200px;
+      width: 200px;
+      background-size: cover;
+      background-position: center center;
+      margin: 0 auto;
+      cursor: pointer;
+      transition: all .9s ease-in-out;
+    }
+    
+    .image13.active{
+    
+      margin: 0 auto;
+      display: hidden;
+      height: 400px;
+      width: 100vh;
+    }
+    
+    .image14{
+      background: url('./shad28.jpeg');
+      height: 200px;
+      width: 200px;
+      background-size: cover;
+      background-position: center center;
+      margin: 0 auto;
+      cursor: pointer;
+      transition: all .9s ease-in-out;
+    }
+    
+    
+    .image14.active{
+    
+      margin: 0 auto;
+      display: hidden;
+      height: 400px;
+      width: 100vh;
+    }
+    
+    .image15{
+      background: url('./IMG_9403.jpeg');
+      height: 200px;
+      width: 200px;
+      background-size: cover;
+      background-position: center center;
+      margin: 0 auto;
+      cursor: pointer;
+      transition: all .9s ease-in-out;
+    
+    }
+    
+    .image15.active{
+    
+      margin: 0 auto;
+      display: hidden;
+      height: 400px;
+      width: 100vh;
+    }
+
+    #contact-container{
+      width: 1350px;
+    }
+
+    #name-box{
+      font-size: 30px;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      border-bottom: 2px solid #fff;
+      color: white;
+      background-color: black;
+      height: 10vh;
+      margin-bottom: 20px;
+    }
+    
+    #email-box{
+      font-size: 30px;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      border-bottom: 2px solid #fff;
+      color: white;
+      background-color: black;
+      height: 10vh;
+    }
+
+    #footer-container{
+      width: 1350px;
+      padding-top: 40%;
+    }
+
+
+}
